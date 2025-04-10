@@ -1,0 +1,1 @@
+// Vous mettrez ici le code de la classe Rectangle
