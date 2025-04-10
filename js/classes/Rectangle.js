@@ -9,6 +9,20 @@ class Rectangle {
         this.#length = length
         this.#width = width
     }
+
+    perimeter() {
+        return (this.#length + this.#width )* 2;
+                   
+    }
+     
+    area() {
+        return (this.#length * this.#width);
+    }
+
+    isSquare() {
+        return (this.#length / this.#width);        
+
+    }
 }
 
     
