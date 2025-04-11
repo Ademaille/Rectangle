@@ -11,18 +11,19 @@ class Rectangle {
     }
 
     perimeter() {
-        return (this.#length + this.#width )* 2;
-                   
+        return (this.#length + this.#width) * 2;
     }
-     
+
     area() {
         return (this.#length * this.#width);
     }
 
     isSquare() {
-        return (this.#length / this.#width);        
-
+        if (this.#length = this.#width) {
+            return true
+        } else {
+            return false;
+        }
     }
 }
 
-    

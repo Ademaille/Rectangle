@@ -1,21 +1,33 @@
-// Vous mettrez ici le code JavaScript principal
-
-let rectangle = new Rectangle(12, 7)
-console.log(rectangle)
+let rectangle = new Rectangle()
 
 let perimetre = rectangle.perimeter()
-console.log(perimetre)
 
 let aire = rectangle.area()
-console.log(aire)
-
-let isSquare = true
-
-if (isSquare = 1) {
-
-} else {
-isSquare = false;
-}
 
 let carré = rectangle.isSquare()
-console.log(carré)
+
+
+
+const Rect = document.querySelector("#create_rect")
+Rect.addEventListener("click", () => {
+    let length = document.querySelector("#length").value;
+    let width = document.querySelector("#width").value;
+
+    length = Number(length)
+    width = Number(width)
+
+    const Création = document.querySelector("#rect_state")
+    Création.textContent = "Longueur = " + length + " | Largeur = " + width;
+})
+
+const Peri = document.querySelector("#calc_perimeter")
+Peri.addEventListener("click", () => {
+    const PeriText = document.querySelector("#perimeter_state")
+    PeriText.textContent = "Périmètre = " + perimetre;
+})
+
+const Aire = document.querySelector("#calc_area")
+Aire.addEventListener("click", () => {
+    const AireText = document.querySelector("#area_state")
+    AireText.textContent = "Aire = " + aire
+})
